@@ -19,6 +19,7 @@ h1{
     height: 100vh;
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items:center;
     justify-content:center;
     
@@ -30,6 +31,7 @@ form{
     width: 50%;
     height: 50%;
     padding: 1em;
+    margin-bottom: 20px;
     
 }
 
@@ -49,6 +51,53 @@ input{
 }
 
 button{
+    padding: 10px;
+    border-radius: 0.25rem;
+    background-color: #014a4a63;
+    color: black;
+    border-color: #014a4aac;
     width: 100px;
-    margin-top: 10px;
+    
+}
+
+.reset{
+margin-left: 10px;
+background-color: #02575700;
+}
+
+button.reset:hover{
+    background-color:#04a1a1a0 ;
+}
+
+button:hover{
+   background-color:#02575700  ; 
+}
+
+.tabela table {
+    background-color: #0167676d;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    border-radius: 1em;
+}
+
+.tabela th {
+    padding: 12px;
+    border-right: solid #004242d4;
+}
+
+
+.tabela td {
+    background-color: #8bb7c5;
+    padding: 5px 10px;
+    border-right: 3px solid #004242d4;
+}
+
+
+.tabela th:last-child {
+    border-right: none;
+}
+
+.tabela td:last-child {
+    border-right: none;
 }

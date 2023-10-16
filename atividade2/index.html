@@ -7,42 +7,67 @@
     <title>Formulario</title>
 </head>
 <body>
-
-    <div class="container">
-       
-        <form action="" method="post">
-            <h1>Formulario</h1>
-            <ul>
-                <li>
-                    <label for="nome">Nome:</label>
-                    <input type="text" name="nome" id="nome">
-                </li>
-                <li>
-                    <label for="sobrenome">Sobrenome:</label>
-                    <input type="text" name="sobrenome" id="sobrenome">
-                </li>
-
-                <li>
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" id="email">
-                </li>
-
-                <li>
-                    <label for="senha">Senha:</label>
-                    <input type="password" name="senha" id="senha" required>
-                </li>
-                
-                <li>
-                    <label for="data">Data de Nascimento:</label>
-                    <input type="date" name="data" id="data">
-                </li>
-
-              <li>
-                <button type="submit">Enviar</button>
-              </li>
-            </ul>
-        </form>
-    </div>
+<main>
     
+        <div class="container">
+    
+            <form action="" method="post" id="crudForm">
+                <h1>Formulario</h1>
+                <ul>
+                    <li>
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome" id="nome" required>
+                    </li>
+                    <li>
+                        <label for="sobrenome">Sobrenome:</label>
+                        <input type="text" name="sobrenome" id="sobrenome" required>
+                    </li>
+    
+                    <li>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" required>
+                    </li>
+    
+                    <li>
+                        <label for="senha">Senha:</label>
+                        <input type="password" name="senha" id="senha" pattern=".{8,}" title="Escreva 8 ou mais caracteres" required >
+                    </li>
+    
+                    <li>
+                        <label for="idade">Data de Nascimento:</label>
+                        <input type="date" name="idade" id="idade" required>
+                    </li>
+    
+                  <li>
+                    <button type="submit">Enviar</button>
+                    <button type="reset" class="reset">Redefinir</button>
+                  </li>
+                </ul>
+            </form>
+    
+            <div id="resultado" class="tabela">
+                <table id="table">
+                  <thead>
+                    <tr>
+                      <th>Nome</th>
+                      <th>Sobrenome</th>
+                      <th>Email</th>
+                      <th>Senha</th>
+                      <th>Data de Nascimento</th>
+                    </tr>
+                  </thead>
+    
+                  <tbody>
+                  </tbody>
+                </table>
+              </div>
+    
+        </div>
+    
+</main>
+
+<div id="response"></div>
+
+<script src="script.js"></script>
 </body>
 </html>
