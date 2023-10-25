@@ -139,6 +139,10 @@ textarea {
     cursor: pointer;
 }
 
+.botao:hover{
+    background-color: #fbb51f;
+
+}
 
 
 
@@ -262,6 +266,7 @@ span.titulo-cafe {
     object-fit: cover;
     height: 60%;
 }
+
 
 .c-card h2 {
     padding: .5rem;
