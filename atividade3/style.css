@@ -8,6 +8,8 @@
 body{
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
+    line-height: 1.5;
+
 }
 
 header{
@@ -80,6 +82,7 @@ textarea{
     display: flex;
     gap: 200px;
     margin-top: 100px;
+    padding-bottom: 100px;
 }
 
 .coluna_head h1{
@@ -155,3 +158,130 @@ nav li{
     margin-top: 20px;
 }
 
+
+.flex-historia{
+display: flex;
+flex-wrap: wrap;
+margin-right: -15px;
+margin-left: -15px;
+}
+
+section{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.xicara-img{
+    width: 85%;
+}
+
+.coluna-historia{
+    flex:50%;
+    max-width: 50%;
+    
+ 
+}
+
+.coluna-historia h2{
+    font-weight: 700;
+    text-align: center;
+    font-size: 2em;
+    color: white;
+    
+}
+
+.coluna-historia p{
+    text-align: center;
+    margin: 8% auto;
+    color: white;
+    padding: 0px 31px;
+}
+
+.botao-flx-historia{
+    display: flex;
+    justify-content: center;
+}
+.flex-img{
+    padding-left: 60px;
+}
+
+.background-cafe{
+    background-image: url("coffee-shop.jpg");
+    background-size: cover;
+    background-position: top;
+}
+
+h2.titulo-cafe{
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 40px;
+    font-size: 1.75rem;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+}
+
+span.titulo-cafe{
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+}
+
+.c-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.c-card {
+    margin: 2rem;
+    color: rgb(0, 0, 0);
+    box-shadow: rgb(0 0 0) 0px 0.4px 2px;
+    text-align: center;
+    max-width: 393px;
+    height: 509px;
+    width: 100%;
+    border-radius: 1rem;
+    background-color: #ffedda;
+}
+
+.c-card img {
+    border-radius: 1rem 1rem 0rem 0rem;
+    width: 100%;
+    object-fit: cover;
+    height: 60%;
+}
+
+.c-card h2 {
+    padding: .5rem;
+    font-size: 1.6rem;
+}
+
+.c-card p {
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 1em;
+    font-style: oblique;
+}
+
+
+.fundotransparente{
+    background-color: rgba(254, 254, 254, 0.201);
+    border-radius: 20px;
+    padding: 100px 0;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    border: 1px solid white;
+}
+
+.titulo-cafe::after{
+        content: "";
+        display: block;
+        width: 200px;
+        margin: 0 auto;
+        height: 1px;
+        background-color: #8f3d03;
+}
