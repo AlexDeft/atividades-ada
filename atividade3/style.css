@@ -1,39 +1,40 @@
 * {
     margin: 0;
     padding: 0;
-    
+
 }
 
 
-body{
+body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     line-height: 1.5;
+    position: relative;
 
 }
 
-header{
+header {
     background-color: antiquewhite;
     background-image: url(hero.jpg);
     background-size: cover;
     background-position: left;
     color: white;
     min-height: 100vh;
-    
+
 }
 
-header img{
+header img {
     vertical-align: middle;
 }
 
-header a{
+header a {
     text-decoration: none;
     display: flex;
     align-items: flex-end;
     color: white;
 }
 
-header span{
+header span {
     font-size: x-large;
     padding-left: 10px;
     font-size: 1em;
@@ -41,11 +42,11 @@ header span{
     text-transform: uppercase;
 }
 
-h1{
+h1 {
     display: inline;
 }
 
-textarea{
+textarea {
     text-indent: 1em;
     font-family: Arial, Helvetica, sans-serif;
     padding-top: 10px;
@@ -69,7 +70,7 @@ textarea{
 
 
 
-.nav{
+.nav {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -78,54 +79,56 @@ textarea{
     border-bottom: solid white;
     align-items: flex-end;
 }
-.coluna_head{
+
+.coluna_head {
     display: flex;
     gap: 200px;
     margin-top: 100px;
     padding-bottom: 100px;
 }
 
-.coluna_head h1{
+.coluna_head h1 {
     font-size: 80px;
     line-height: 1.3em;
 }
 
-.coluna_head h2{
-   margin-top: 1em;
-   font-size: 2em;
-   margin-bottom: 2em;
-   
+.coluna_head h2 {
+    margin-top: 1em;
+    font-size: 2em;
+    margin-bottom: 2em;
+
 }
 
-.cafeform{
+.cafeform {
     min-width: 320px;
     padding: 40px;
     background-color: rgb(230, 211, 198);
     color: gray;
     border-radius: 0.25em;
-    
+
 }
 
-.cafeform input, .cafeform select{
+.cafeform input,
+.cafeform select {
     border-radius: 5px;
     border: none;
     width: 100%;
     height: 40px;
     text-indent: 1em;
-    
+
 }
 
-#burguer{
+#burguer {
     display: none;
 }
 
 
-.cafeform li{
-   list-style: none;
-   padding: 10px;
+.cafeform li {
+    list-style: none;
+    padding: 10px;
 }
 
-.botao{
+.botao {
     padding: 14px 40px;
     text-align: center;
     font-size: 1em;
@@ -133,6 +136,7 @@ textarea{
     border: none;
     background-color: #e59d03;
     color: white;
+    cursor: pointer;
 }
 
 
@@ -142,76 +146,81 @@ textarea{
 nav ul.funciona {
     list-style: none;
     display: flex;
-    
+
 }
 
-nav li{
+.funciona a:hover {
+    text-decoration: underline;
+}
+
+nav li {
     padding-left: 10px;
     font-size: 1.2em;
     border-right: solid 1px;
-    padding-right:10px ;
+    padding-right: 10px;
 }
 
-.flex-btn{
+.flex-btn {
     display: flex;
     justify-content: center;
     margin-top: 20px;
 }
 
 
-.flex-historia{
-display: flex;
-flex-wrap: wrap;
-margin-right: -15px;
-margin-left: -15px;
+.flex-historia {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
 }
 
-section{
+section {
     padding-top: 100px;
     padding-bottom: 100px;
 }
 
-.xicara-img{
+.xicara-img {
     width: 85%;
 }
 
-.coluna-historia{
-    flex:50%;
+.coluna-historia {
+    flex: 50%;
     max-width: 50%;
-    
- 
+
+
 }
 
-.coluna-historia h2{
+.coluna-historia h2 {
     font-weight: 700;
     text-align: center;
     font-size: 2em;
     color: white;
-    
+
 }
 
-.coluna-historia p{
+.coluna-historia p {
     text-align: center;
     margin: 8% auto;
     color: white;
     padding: 0px 31px;
 }
 
-.botao-flx-historia{
+.botao-flx-historia {
     display: flex;
     justify-content: center;
 }
-.flex-img{
+
+.flex-img {
     padding-left: 60px;
 }
 
-.background-cafe{
+.background-cafe {
     background-image: url("coffee-shop.jpg");
     background-size: cover;
     background-position: top;
 }
 
-h2.titulo-cafe{
+h2.titulo-cafe {
     text-align: center;
     font-weight: 700;
     margin-bottom: 40px;
@@ -220,7 +229,7 @@ h2.titulo-cafe{
     font-weight: bolder;
 }
 
-span.titulo-cafe{
+span.titulo-cafe {
     text-align: center;
     font-weight: 700;
     font-size: 1.6rem;
@@ -267,7 +276,7 @@ span.titulo-cafe{
 }
 
 
-.fundotransparente{
+.fundotransparente {
     background-color: rgba(254, 254, 254, 0.201);
     border-radius: 20px;
     padding: 100px 0;
@@ -277,11 +286,90 @@ span.titulo-cafe{
     border: 1px solid white;
 }
 
-.titulo-cafe::after{
-        content: "";
-        display: block;
-        width: 200px;
-        margin: 0 auto;
-        height: 1px;
-        background-color: #8f3d03;
+.titulo-cafe::after {
+    content: "";
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    height: 1px;
+    background-color: #8f3d03;
+}
+
+
+table {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    /* Centraliza a tabela */
+    text-align: center;
+    /* Centraliza o texto dentro das células */
+    background-color: #ffedda;
+    /* Cor de fundo da tabela */
+    margin-top: 20px;
+    /* Espaçamento superior */
+    border-collapse: collapse;
+    /* Remove espaçamento entre as células */
+}
+
+th,
+td {
+    padding: 15px;
+    border: 1px solid #8f3d03;
+    /* Cor da borda */
+}
+
+
+
+
+
+section#table>.titulo-cafe::after {
+    content: "";
+    display: block;
+    width: 85%;
+    max-width: 400px;
+    margin: 0 auto;
+    height: 1px;
+    margin-bottom: 50px;
+    background-color: #8f3d03;
+}
+
+
+footer {
+
+    box-shadow: 0px 6px 11px 3px #000000c7;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    align-items: baseline;
+
+}
+
+.nav-footer {
+    color: black;
+    text-align: center;
+    list-style: none;
+    line-height: 30px;
+
+}
+
+.nav-footer a {
+    text-decoration: none;
+    color: black;
 }
