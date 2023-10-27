@@ -1,15 +1,14 @@
 * {
     margin: 0;
     padding: 0;
-
 }
 
 
-body {
+body, html {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     line-height: 1.5;
-    position: relative;
+    scroll-behavior: smooth;
 
 }
 
@@ -78,6 +77,10 @@ textarea {
     padding: 0.5rem 1rem;
     border-bottom: solid white;
     align-items: flex-end;
+}
+
+.nav li:last-child{
+    border: none;
 }
 
 .coluna_head {
@@ -305,22 +308,15 @@ table {
     width: 100%;
     max-width: 1000px;
     margin: auto;
-    /* Centraliza a tabela */
     text-align: center;
-    /* Centraliza o texto dentro das células */
     background-color: #ffedda;
-    /* Cor de fundo da tabela */
     margin-top: 20px;
-    /* Espaçamento superior */
-    border-collapse: collapse;
-    /* Remove espaçamento entre as células */
-}
+    border-collapse: collapse;}
 
 th,
 td {
     padding: 15px;
     border: 1px solid #8f3d03;
-    /* Cor da borda */
 }
 
 
@@ -377,4 +373,10 @@ footer {
 .nav-footer a {
     text-decoration: none;
     color: black;
+
+}
+
+.nav-footer a:hover {
+    text-decoration: underline;
+    
 }

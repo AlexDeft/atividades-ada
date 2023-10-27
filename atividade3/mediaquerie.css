@@ -4,7 +4,7 @@
     }
 
     .block {
-        overflow-x: scroll;
+        overflow-x: none;
         text-align: center;
         margin-left: 5%;
         width: 90%;
@@ -191,6 +191,19 @@
 @media (min-height:280px) and (max-width:355px) {
     .c-card img {
         height: 45%;
+    }
+}
+
+@media (min-height:280px) and (max-width:458px){
+    .coluna_head h1 {
+        line-height: 1.6em;
+    }
+
+    .block {
+        overflow-x: scroll;
+        text-align: center;
+        margin-left: 5%;
+        width: 90%;
     }
 }
 
