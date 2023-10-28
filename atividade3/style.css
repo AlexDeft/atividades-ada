@@ -14,7 +14,7 @@ body, html {
 
 header {
     background-color: antiquewhite;
-    background-image: url(hero.jpg);
+    background-image: url(img/hero.jpg);
     background-size: cover;
     background-position: left;
     color: white;
@@ -222,7 +222,7 @@ section {
 }
 
 .background-cafe {
-    background-image: url("coffee-shop.jpg");
+    background-image: url("img/coffee-shop.jpg");
     background-size: cover;
     background-position: top;
 }

@@ -84,57 +84,6 @@
 
 }
 
-@media (max-width:672px) {
-    .coluna_head {
-        width: 95%;
-        margin: 0 auto;
-        flex-direction: column;
-        margin-top: 70px;
-        gap: 100px;
-
-    }
-
-    .container {
-        max-width: 500px;
-    }
-
-    .cafeform {
-        width: 90%;
-        min-width: unset;
-        padding: 40px 5%;
-    }
-
-    .coluna_head h1 {
-        font-size: 3.2em;
-        line-height: 2.2em;
-    }
-
-    header nav {
-        display: none;
-    }
-
-    #burguer {
-        display: block;
-    }
-
-    .coluna-historia p {
-        padding: 0;
-    }
-
-    footer {
-        position: relative;
-    }
-
-    .footer-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-
-
-}
 
 @media (max-width:854px) {
     .flex-historia {
@@ -188,9 +137,64 @@
 
 }
 
-@media (min-height:280px) and (max-width:355px) {
-    .c-card img {
-        height: 45%;
+
+
+@media (max-width:672px) {
+    .coluna_head {
+        width: 95%;
+        margin: 0 auto;
+        flex-direction: column;
+        margin-top: 70px;
+        gap: 100px;
+
+    }
+
+    .container {
+        max-width: 500px;
+    }
+
+    .cafeform {
+        width: 90%;
+        min-width: unset;
+        padding: 40px 5%;
+    }
+
+    .coluna_head h1 {
+        font-size: 3.2em;
+        line-height: 2.2em;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    #burguer {
+        display: block;
+    }
+
+    .coluna-historia p {
+        padding: 0;
+    }
+
+    footer {
+        position: relative;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+}
+
+@media (min-width: 601px) {
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
     }
 }
 
@@ -208,9 +212,13 @@
 }
 
 
-@media (min-width: 601px) {
-    .footer-content {
-        display: flex;
-        justify-content: space-between;
+
+@media (min-height:280px) and (max-width:355px) {
+    .c-card img {
+        height: 45%;
     }
 }
+
+
+
+
