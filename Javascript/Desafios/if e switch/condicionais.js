@@ -116,7 +116,7 @@ idade >= 18 ? console.log("Pode") : console.log("nao pode")
 
 const numeroParouImpar = Number(prompt("Digite um numero"));
 
-switch (numero % 2) {
+switch (numeroParouImpar % 2) {
     case 0:
         console.log("É par")
         break;
