@@ -53,7 +53,7 @@ else if (numero3 > numero2 && numero1) {
     console.log(`${numero3} é maior que ${numero2} e ${numero1}`)
 }
 //Ternario
-numero1 > numero2 && numero1 > numero3 ? console.log(`${numero1} é maior que ${numero2} e ${numero3}`) : numero2 > numero3 ? console.log(`${numero2} é maior que ${numero3} e ${numero1}`) : console.log(`${numero3} é maior que ${numero2} e ${numero1}`)
+numero1 > numero2 && numero3 ? console.log(`${numero1} é maior que ${numero2} e ${numero3}`) : numero2 > numero3 && numero1 ? console.log(`${numero2} é maior que ${numero3} e ${numero1}`) : numero3 > numero2 && numero1 ? console.log(`${numero3} é maior que ${numero2} e ${numero1}`): null
 
 //##############################################################################################################################################################################################################################################################################################################################################################//
 
@@ -77,6 +77,8 @@ else if (lado1 === lado2 || lado2 === lado3 || lado1 === lado3) {
 else {
     console.log("É triangulo Escaleno")
 }
+
+lado1 === lado2 && lado2 === lado3 ? console.log("É triangulo equilatero") : lado1 === lado2 || lado2 === lado3 || lado1 === lado3 ? console.log("É triangulo Isoceeles") : console.log("É triangulo Escaleno")
 
 //##############################################################################################################################################################################################################################################################################################################################################################//
 // 05 - Verificação de Ano Bissexto
