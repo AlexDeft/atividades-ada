@@ -114,7 +114,7 @@ idade >= 18 ? console.log("Pode") : console.log("nao pode")
 
 //SWITCH//
 
-const numeroParouImpar = Number(prompt("Digite um numero"));
+const numeroParouImpar = Number(prompt("Digite um numero"))
 
 switch (numeroParouImpar % 2) {
     case 0:
