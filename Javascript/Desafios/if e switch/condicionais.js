@@ -13,7 +13,7 @@ if (numero % 2 == 0) {
 // ternario
 numero % 2 == 0 ? console.log("É par") : console.log("Não é par")
 
-//###################################################################################################################################################//
+//##############################################################################################################################################################################################################################################################################################################################################################//
 
 // 02 - Verificação de Nota
 
@@ -26,22 +26,22 @@ numero % 2 == 0 ? console.log("É par") : console.log("Não é par")
 const nota = Number(prompt("Digite sua nota"))
 
 if (nota >= 90) {
-    console.log("Aprovado com mérito")    
+    console.log("Aprovado com mérito")
 } else if (nota >= 70 && nota < 90) {
     console.log("Aprovado")
 } else if (nota < 70) {
     console.log("Reprovado")
 }
 
-//###################################################################################################################################################//
+//##############################################################################################################################################################################################################################################################################################################################################################//
 
 // Determinação do Maior Número
 
 //  Escreva um programa que receba três números como entrada e determina o maior deles. Imprima o número mais alto
 
- numero1 = 6
- numero2 = 18
- numero3 = 1
+numero1 = 6
+numero2 = 18
+numero3 = 1
 
 if (numero1 > numero2 && numero3) {
     console.log(`${numero1} é maior que ${numero2} e ${numero3}`)
@@ -52,8 +52,10 @@ else if (numero2 > numero3 && numero1) {
 else if (numero3 > numero2 && numero1) {
     console.log(`${numero3} é maior que ${numero2} e ${numero1}`)
 }
+//Ternario
+numero1 > numero2 && numero1 > numero3 ? console.log(`${numero1} é maior que ${numero2} e ${numero3}`) : numero2 > numero3 ? console.log(`${numero2} é maior que ${numero3} e ${numero1}`) : console.log(`${numero3} é maior que ${numero2} e ${numero1}`)
 
-//###################################################################################################################################################//
+//##############################################################################################################################################################################################################################################################################################################################################################//
 
 
 // 04 - Verificação de Triângulo
@@ -72,7 +74,7 @@ else if (lado1 === lado2 || lado2 === lado3 || lado1 === lado3) {
     console.log("É triangulo Isoceeles")
 }
 
-else{
+else {
     console.log("É triangulo Escaleno")
 }
 
@@ -89,21 +91,90 @@ if ((ano % 4 === 0 && ano % 100 !== 0) || ano % 400 === 0) {
     console.log("Não é um ano bissexto")
 }
 
-//###################################################################################################################################################//
+//##############################################################################################################################################################################################################################################################################################################################################################//
 
 // 06 - Verificação de Idade para Compra de Bebida Alcoólica (If e Ternário)
 // Crie um programa que verifica a idade de uma pessoa e determina se ela pode comprar bebidas alcoólicas ou não. Se a pessoa tiver 18 anos ou mais, ela pode comprar bebidas alcoólicas; caso contrário, não pode.
 
- const idade = Number(prompt("Digite sua idade"))
+const idade = Number(prompt("Digite sua idade"))
 
- if (idade >= 18) {
-     console.log("Pode tomar uma")
- }
- else {
-     console.log("Não pode")
+if (idade >= 18) {
+    console.log("Pode tomar uma")
 }
- 
-//Ternario
- idade >=18 ? console.log("Pode") : console.log("nao pode")
+else {
+    console.log("Não pode")
+}
 
-//###################################################################################################################################################//
+//Ternario
+idade >= 18 ? console.log("Pode") : console.log("nao pode")
+
+//##############################################################################################################################################################################################################################################################################################################################################################//
+
+//SWITCH//
+
+const numeroParouImpar = Number(prompt("Digite um numero"));
+
+switch (numero % 2) {
+    case 0:
+        console.log("É par")
+        break;
+    case 1:
+        console.log("É impar")
+        break;
+}
+//##############################################################################################################################################################################################################################################################################################################################################################//
+
+// 09 - Conversão de Notas em Conceitos
+
+// Faça um programa que peça ao usuário para digitar uma letra e verifique se é uma vogal ou uma consoante utilizando o comando switch case. Se o usuário digitar uma vogal (a, e, i, o, u), o programa deve exibir a mensagem "É uma vogal". Se o usuário digitar uma consoante, o programa deve exibir a mensagem "É uma consoante".
+const letra = prompt("Digite uma letra")
+
+switch (letra) {
+    case 'a':
+    case 'e':
+    case 'i':
+    case 'o':
+    case 'u':
+        console.log("é vogal")
+        break;
+    default:
+        console.log("é consoante")
+        break;
+}
+
+//##############################################################################################################################################################################################################################################################################################################################################################//
+
+
+// 10 - Determinação de Estação do Ano
+
+// Escreva um programa que recebe o nome de um mês como entrada e utiliza um switch case para determinar a estação do ano correspondente. Use a seguinte correspondência de meses:
+
+// Dezembro, Janeiro, Fevereiro: "Inverno" Março, Abril, Maio: "Primavera" Junho, Julho, Agosto: "Verão" Setembro, Outubro, Novembro: "Outono"
+
+const mes = prompt("Digite uma mes").toLowerCase()
+
+switch (mes) {
+    case "dezembro":
+    case "janeiro":
+    case "fevereiro":
+        console.log("É inverno")
+        break;
+
+    case "março":
+    case "abril":
+    case "maio":
+        console.log("É primavera")
+        break;
+
+    case "junho":
+    case "julho":
+    case "agosto":
+        console.log("É verão")
+        break;
+
+    case "setembro":
+    case "outubro":
+    case "novembro":
+        console.log("É outono")
+        break;
+}
