@@ -53,7 +53,7 @@ else if (numero3 > numero2 && numero1) {
     console.log(`${numero3} é maior que ${numero2} e ${numero1}`)
 }
 //Ternario
-numero1 > numero2 && numero3 ? console.log(`${numero1} é maior que ${numero2} e ${numero3}`) : numero2 > numero3 && numero1 ? console.log(`${numero2} é maior que ${numero3} e ${numero1}`) : numero3 > numero2 && numero1 ? console.log(`${numero3} é maior que ${numero2} e ${numero1}`): null
+numero1 > numero2 && numero3 ? console.log(`${numero1} é maior que ${numero2} e ${numero3}`) : numero2 > numero3 && numero1 ? console.log(`${numero2} é maior que ${numero3} e ${numero1}`) : numero3 > numero2 && numero1 ? console.log(`${numero3} é maior que ${numero2} e ${numero1}`) : null
 
 //##############################################################################################################################################################################################################################################################################################################################################################//
 
