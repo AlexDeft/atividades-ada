@@ -2,8 +2,8 @@
 
 GitHub Pages
 
-https://alexdeft.github.io/atividades-ada/Front-End%20Estatico/atividade1
+<a href="https://alexdeft.github.io/atividades-ada/Front-End%20Estatico/atividade1" target="_blank" rel="noopener noreferrer">Curriculo Gato</a>
 
-https://alexdeft.github.io/atividades-ada/Front-End%20Estatico/atividade2
+<a href="https://alexdeft.github.io/atividades-ada/Front-End%20Estatico/atividade2" target="_blank" rel="noopener noreferrer">Formulário usando API</a>
 
-https://alexdeft.github.io/atividades-ada/Front-End%20Estatico/atividade3
+<a href="https://alexdeft.github.io/atividades-ada/Front-End%20Estatico/atividade3" target="_blank" rel="noopener noreferrer">Café do Ronaldo</a>
