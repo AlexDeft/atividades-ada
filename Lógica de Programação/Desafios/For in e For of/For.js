@@ -26,7 +26,7 @@
 // for (let i = 0; i < 11; i++) {
 // console.log( `${soma} x ${i} = ${soma * i}`)
 // }
- 
+
 //#####################################################################################################################################################//
 
 //05 -
@@ -69,7 +69,7 @@
 //     if (palavra[i] === 'a' || palavra[i] === 'e' || palavra[i] === 'i' || palavra[i] === 'o' || palavra[i] === 'u') {
 //         vogal++
 //     }
-    
+
 // }
 // console.log(vogal)
 
@@ -83,7 +83,7 @@
 //  for (let i = 0; i < lista.length; i++) {
 //    for (let a = 0; a < lista.length; a++) {
 //      if (lista[a] > lista[a + 1]) {
-      
+
 //        [lista[a], lista[a + 1]] = [lista[a + 1], lista[a]]
 //      }
 //    }
@@ -110,7 +110,7 @@
 // for (let i = 1; i <= quantidadeDado; i++) {
 //   const resultadoDado = parseInt(Math.random() * 6) + 1
 //   soma += resultadoDado
-  
+
 //   console.log(`Dado ${i}: ${resultadoDado}`)
 // }
 
@@ -135,13 +135,13 @@
 //  for (let i = 1; i <= quantidadeDado; i++) {
 //    const resultadoDado = parseInt(Math.random() * numerodeLados) + 1
 //    soma += resultadoDado
-  
+
 //    console.log(`Dado ${i}: ${resultadoDado}`)
 //  }
 
 
 // console.log(`Soma dos Valores: ${soma}`)
- 
+
 //#####################################################################################################################################################//
 
 // 12 - Fazer um simulador de rolagem de dados, que receba como input N dados e N lados e quantidade de tentativas e mostre as rolagens individuais e a soma dos valores?
@@ -155,7 +155,7 @@
 
 // const quantidadeDado = Number(prompt("Digite quantos dados usar"))
 // const numerodeLados = Number(prompt("Digite quantos lados tem o dado"))
-// const tentativas = 3 
+// const tentativas = 3
 // let soma = 0
 
 // for (let a = 1; a <= tentativas; a++) {
@@ -167,9 +167,10 @@
 
 //     console.log(`Dado ${i}: ${resultadoDado}`)
 //   }
-  
+
 // }
 
 // console.log(`Soma dos Valores: ${soma}`)
 
 //#####################################################################################################################################################//
+
