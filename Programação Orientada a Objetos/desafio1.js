@@ -52,16 +52,28 @@ class Conta {
 
     depositar(valor) {
         this.#saldo += valor
-        console.log(`deposito de ${valor} realizado, novo saldo: R$${this.#saldo}`)
+        console.log(`Depósito de R$${valor} realizado, novo saldo: R$${this.#saldo}`)
     }
 
     sacar(valor) {
         if (this.#validarSaldo(valor)) {
-            this.#saldo -= valor
-            console.log(`saque de ${valor} realizado. novo saldo: R$${this.#saldo}`)
+            this.#saldo -= valor;
+            console.log(`Saque de R$${valor} realizado, novo saldo: R$${this.#saldo}`)
         } else {
             console.log('saque não permitido.')
         }
+    }
+
+    get numeroConta() {
+        return this.#numeroConta
+    }
+
+    get nomeTitular() {
+        return this.#nomeTitular
+    }
+
+    get saldo() {
+        return this.#saldo
     }
 
     #validarSaldo(valor) {
@@ -73,3 +85,7 @@ const conta = new Conta('123', 'asd', 1000)
 conta.depositar(500)
 conta.sacar(2000)
 conta.sacar(800)
+
+console.log(conta.numeroConta)
+console.log(conta.nomeTitular)
+console.log(conta.saldo)
