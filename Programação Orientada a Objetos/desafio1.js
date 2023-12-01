@@ -52,13 +52,13 @@ class Conta {
 
     depositar(valor) {
         this.#saldo += valor
-        console.log(`depósito de ${valor} realizado, novo saldo: R$${this.#saldo}`)
+        console.log(`deposito de ${valor} realizado, novo saldo: R$${this.#saldo}`)
     }
 
     sacar(valor) {
         if (this.#validarSaldo(valor)) {
             this.#saldo -= valor
-            console.log(`saque de ${valor} realizado. Novo saldo: R$${this.#saldo}`)
+            console.log(`saque de ${valor} realizado. novo saldo: R$${this.#saldo}`)
         } else {
             console.log('saque não permitido.')
         }
