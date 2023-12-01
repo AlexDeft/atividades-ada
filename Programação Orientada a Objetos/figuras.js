@@ -2,7 +2,7 @@ class Triangulo {
     base
     altura
     cor
-    a
+    
     constructor(base, altura, cor) {
         this.base = base
         this.altura = altura
