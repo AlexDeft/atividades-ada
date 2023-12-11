@@ -247,10 +247,11 @@ span.titulo-cafe {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+    
 }
 
 .c-card {
-    margin: 2rem;
+    margin: 0 2rem 2rem 2rem;
     color: rgb(0, 0, 0);
     box-shadow: rgb(0 0 0) 0px 0.4px 2px;
     text-align: center;
@@ -281,6 +282,16 @@ span.titulo-cafe {
     font-style: oblique;
 }
 
+.c-card button{
+        
+    padding: 10px 30px;
+    margin-left: 20px;
+    border-radius: 0.6em;
+    border: 1px solid #664624;
+    background-color: #CCB399;
+    
+    
+}
 
 .fundotransparente {
     background-color: rgba(254, 254, 254, 0.201);
