@@ -26,4 +26,10 @@ export class Estoque {
     static get produtos() {
         return this.#produtos
     }
+
+    static findProduto(id){
+        return this.#produtos.find(
+            produto => produto.id == id
+            )
+    }
 }
