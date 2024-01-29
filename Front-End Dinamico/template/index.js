@@ -12,7 +12,7 @@ const pages = {
 }
 
 // Navegação entre páginas
-export async function Navegar(pageName) {
+async function Navegar(pageName) {
     // Limpa o conteúdo atual da página
     const root = document.getElementById('root')
     root.innerHTML = ''
