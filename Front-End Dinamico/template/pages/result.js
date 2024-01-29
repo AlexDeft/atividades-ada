@@ -141,6 +141,7 @@ export function result(Navegar) {
     const homens = localStorage.getItem('Homens')
     const mulheres = localStorage.getItem('Mulheres')
     const criancas = localStorage.getItem('Crianças')
+    const adultos = parseInt(homens) + parseInt(mulheres)
 
     // Tabela de referência(sugestão)
     // Carne
@@ -163,17 +164,18 @@ export function result(Navegar) {
 
     // calculando convidados
     totalGuest.textContent = `${parseInt(homens) + parseInt(mulheres) + parseInt(criancas)} convidados`
+
     guestListHomen.textContent = `${homens} Homens`
     guestListMulheres.textContent = `${mulheres} Mulheres`
     guestListCriancas.textContent = `${criancas} Crianças`
 
     carne.querySelector('span').textContent = `${((0.4 * homens) + (0.32 * mulheres) + (0.2 * criancas)).toFixed(2)} kg`
-    paoDeAlho.querySelector('span').textContent = `${((2 * homens) + (1 * criancas))} unidades`
-    carvao.querySelector('span').textContent = `${(1 * (homens + mulheres + criancas)).toFixed(2)} kg`
+    paoDeAlho.querySelector('span').textContent = `${((2 * adultos) + (1 * criancas))} unidades`
+    carvao.querySelector('span').textContent = `${(1 * (homens + mulheres + criancas)).toFixed(1)} kg`
     sal.querySelector('span').textContent = `${(0.04 * (homens + mulheres + criancas)).toFixed(2)} kg`
-    gelo.querySelector('span').textContent = `${((5 * (homens + mulheres + criancas)) / 10).toFixed(2)} kg`
-    refrigerante.querySelector('span').textContent = `${((2 * (homens + mulheres + criancas)) / 5)} ml`
-    agua.querySelector('span').textContent = `${((1 * (homens + mulheres + criancas)) / 5)} ml`
+    gelo.querySelector('span').textContent = `${((5 * (homens + mulheres + criancas)) / 10).toFixed(1)} kg`
+    refrigerante.querySelector('span').textContent = `${((2 * (homens + mulheres + criancas)) / 5).toFixed(3)} ml`
+    agua.querySelector('span').textContent = `${((1 * (homens + mulheres + criancas)) / 5).toFixed(3)} ml`
 
 
 }
