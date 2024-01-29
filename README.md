@@ -1,6 +1,6 @@
 # atividades-ada
 
-GitHub Pages - Front-End Estático
+<h1>GitHub Pages - Front-End Estático</h1>
 
 <span>Atividade 1 - </span><a href="https://alexdeft.github.io/atividades-ada/Front-End%20Estatico/atividade1" target="_blank" rel="noopener noreferrer">Curriculo Gato</a> 
 
