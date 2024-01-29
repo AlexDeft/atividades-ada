@@ -282,16 +282,19 @@ span.titulo-cafe {
     font-style: oblique;
 }
 
+.c-card span.preco{
+    margin-left: 40px;
+}
+
 .c-card button{
         
     padding: 10px 30px;
     margin-left: 20px;
     border-radius: 0.6em;
     border: 1px solid #664624;
-    background-color: #CCB399;
-    
-    
+    background: linear-gradient(to right, #CCB399 50%, #f5f1f1 41%, #fff5ff 58.85%);
 }
+
 
 .fundotransparente {
     background-color: rgba(254, 254, 254, 0.201);
