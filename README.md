@@ -1,4 +1,4 @@
-<h1># atividades-ada</h1>
+# atividades-ada
 
 <h2>GitHub Pages - Front-End Estático</h2>
 
