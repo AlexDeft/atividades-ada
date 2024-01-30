@@ -23,7 +23,6 @@ form{
     background-color: #a0ffff6d;
     border-radius: 1em;
     width: 50%;
-    height: 50%;
     padding: 1em;
     margin-bottom: 20px;
     
@@ -116,3 +115,24 @@ button:hover{
 .tabela td:last-child {
     border-right: none;
 }
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    form {
+        width: 80%;
+    }
+    
+    .tabela table {
+        width: 100%;
+    }
+    
+    .tabela th,
+    .tabela td {
+        padding: 8px;
+    }
+}
+
