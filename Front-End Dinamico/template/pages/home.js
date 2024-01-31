@@ -1,5 +1,6 @@
 export function home(Navegar) {
     let root = document.getElementById('root')
+    document.body.style.backgroundColor = "#3f323a"
 
     let container = document.createElement('div')
     container.className = 'container'
