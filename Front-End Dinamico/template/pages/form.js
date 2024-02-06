@@ -1,4 +1,4 @@
-export function form() {
+export function form(Navegar) {
     let root = document.getElementById('root')
 
     // Criação do elemento container
@@ -138,6 +138,10 @@ export function form() {
     let skipRegister = document.createElement('button')
     skipRegister.id = 'skip-register'
     skipRegister.textContent = 'Pular'
+    skipRegister.addEventListener('click', function (event) {
+        event.preventDefault();
+        Navegar('result');
+    })
     navContainer.appendChild(skipRegister)
 
 
