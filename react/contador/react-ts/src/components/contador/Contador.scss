@@ -1,0 +1,38 @@
+.App{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 16px;
+    color: white;
+    background-color: #282c34;
+
+}
+
+
+.Contador {
+    height: 600px;
+    width: 600px;
+    background-color: aliceblue;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+
+    &__valor {
+        font-size: 2em;
+        font-weight: bold;
+    }
+
+    &__acoes {
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+    }
+    &__botao:disabled{
+        cursor: not-allowed;
+    }
+}

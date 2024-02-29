@@ -1,0 +1,51 @@
+.Container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;   
+    margin-bottom: 30px;
+    justify-content: space-evenly;
+   
+    
+}
+
+
+
+
+.Manchete {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 400px;
+    height: 200px;
+    text-align: left;
+    background-color: purple;
+    border: 1px solid yellow;
+    border-radius: 8px;
+    margin: 10px;
+    &__descricao {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding-left: 8px;
+    }
+
+    &__titulo {
+        color: yellow;
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    &__subtitulo {
+        font-size: 16px;
+    }
+    
+    
+}
+.Manchete__imagem {
+    width: 100%;
+    object-fit: cover;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+
